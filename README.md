@@ -17,8 +17,11 @@ Please follow the below steps to configure a WebApp running on an AWS EC2 instan
 11.	Run CPU stress test on the ASG and check if scaling event triggers.   
 
 Steps to install and configure stress utility on Amazon Linux:-
+
 amazon-linux-extras install epel –y
+
 yum install stress -y
+
 stress --cpu 1 --timeout 800 &
 
 Architectural Diagram:-
