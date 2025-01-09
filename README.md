@@ -2,6 +2,7 @@
 Webapp with AWS ASG and ALB
 
 YouTube Video URL: 
+
 Please follow the below steps to configure a WebApp running on an AWS EC2 instance (part of AutoScaling Group attached to an Application LB).
 1.	Create an IAM user (example: adminjohn with Administrator access).
 2.	Create a Security Group for LT (Launch Template) and ALB (Application Load balancer).
