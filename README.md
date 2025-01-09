@@ -22,12 +22,15 @@ yum install stress -y
 stress --cpu 1 --timeout 800 &
 
 Architectural Diagram:-
+
 ![image](https://github.com/user-attachments/assets/c88d21bd-6d6e-4f78-81cc-c5543c19745e)
 
 AWS SNS:
+
 ![image](https://github.com/user-attachments/assets/262f3c8f-93b0-4838-a63a-4e3d41b0510f)
 
 AWS CloudWatch:
+
 ![image](https://github.com/user-attachments/assets/eca2fdc7-7b04-4387-988b-28d46eef9df2)
 
 
