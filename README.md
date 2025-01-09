@@ -8,13 +8,28 @@ Please follow the below steps to configure a WebApp running on an AWS EC2 instan
 2.	Create a Security Group for LT (Launch Template) and ALB (Application Load balancer).
 3.	Create a LT and an ASG (AutoScaling Group).
 4.	Launch an EC2 instance from LT.
-5.	Register a custom AMI (Amazon Machine Image) with WebApp Configuration.
-6.	Update the LT with new AMI.
-7.	Perform ASG Instance Refresh.
-8.	Create a TG (Target Group)) and an ALB.
-9.	Attach the ALB with ASG.
-10.	Create a Dynamic Scaling Policy with a CloudWatch Alarm and SNS (Simple Notification Service).
-11.	Run CPU stress test on the ASG and check if scaling event triggers.   
+5.	SSH to the EC2 Instance and register a custom AMI (Amazon Machine Image) with WebApp Configuration.
+
+   WebApp configuration steps:
+   
+   sudo su -
+   
+   yum install httpd -y
+
+   git clone https://github.com/bhavukm/webapp-asg-alb.git
+
+   cp -r webapp-asg-alb/ /var/www/html
+
+   systemctl start httpd
+
+   systemctl enable httpd
+   
+7.	Update the LT with new AMI.
+8.	Perform ASG Instance Refresh.
+9.	Create a TG (Target Group)) and an ALB.
+10.	Attach the ALB with ASG.
+11.	Create a Dynamic Scaling Policy with a CloudWatch Alarm and SNS (Simple Notification Service).
+12.	Run CPU stress test on the ASG and check if scaling event triggers.   
 
 Steps to install and configure stress utility on Amazon Linux:-
 
