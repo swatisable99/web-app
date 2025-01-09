@@ -1,5 +1,5 @@
 # webapp-asg-alb
-Webapp with AWS ASG and ALB
+Webapp Deployment with an AWS AutoScaling Group, an Application Load Balancer, and a Dynamic Scaling policy (metric: CPU Utilization) configured using a CloudWatch Alarm, SNS and IAM.
 
 YouTube Video URL: 
 
