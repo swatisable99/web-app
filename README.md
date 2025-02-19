@@ -1,10 +1,6 @@
 # webapp-asg-alb
 Webapp Deployment with an AWS AutoScaling Group, an Application Load Balancer, and a Dynamic Scaling policy (metric: CPU Utilization) configured using a CloudWatch Alarm, SNS and IAM.
 
-YouTube Video URL: https://youtu.be/dMUQTQS1l3g
-
-YouTube Channel: https://www.youtube.com/@techapricate
-
 Please follow the below steps to configure a WebApp running on an AWS EC2 instance (part of AutoScaling Group attached to an Application LB).
 1.	Create an IAM user (example: adminjohn with Administrator access).
 2.	Create a Security Group for LT (Launch Template) and ALB (Application Load balancer).
@@ -17,8 +13,6 @@ Please follow the below steps to configure a WebApp running on an AWS EC2 instan
    sudo su -
    
    yum install httpd -y
-
-   git clone https://github.com/bhavukm/webapp-asg-alb.git
 
    cp -r webapp-asg-alb/ /var/www/html
 
@@ -52,6 +46,3 @@ AWS SNS:
 AWS CloudWatch:
 
 ![image](https://github.com/user-attachments/assets/eca2fdc7-7b04-4387-988b-28d46eef9df2)
-
-
-
